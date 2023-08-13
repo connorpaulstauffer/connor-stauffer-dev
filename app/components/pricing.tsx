@@ -7,6 +7,8 @@ const includedFeatures = [
   'Official member t-shirt',
 ]
 
+const PAYMENT_URL = 'https://buy.stripe.com/00gbIT9WCagMe2I4gg'
+
 export function Pricing() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
@@ -50,7 +52,9 @@ export function Pricing() {
                   <span className="text-sm font-semibold leading-6 tracking-wide text-gray-300">USD</span>
                 </p>
                 <a
-                  href="#"
+                  href={PAYMENT_URL}
+                  target='_blank'
+                  rel='noreferrer'
                   className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Work with me

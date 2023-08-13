@@ -77,17 +77,21 @@ export function Hero() {
           </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-          <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="App screenshot"
-              width={2432}
-              height={1442}
-              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
-            />
+          <div className="w-screen overflow-hidden rounded-xl bg-gray-900">
+            <div className="flex bg-gray-800/40 ring-1 ring-white/5">
+              <div className="-mb-px flex text-sm font-medium leading-6 text-gray-400">
+                <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
+                  chat-bot.tsx
+                </div>
+                <div className="border-r border-gray-600/10 px-4 py-2">app.tsx</div>
+              </div>
+            </div>
+            <div className="px-6 pb-14 pt-6">
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
