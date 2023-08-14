@@ -1,4 +1,4 @@
-import { Hero, Nav, HeroWrapper, HeroGrid, HeroCloud, HeroContent, HeroHeader, HeroSubHeader, HeroActions } from '@/ui/hero'
+import { Hero, Nav, HeroWrapper, HeroGrid, HeroCloud, HeroContent, HeroHeader, HeroSubHeader, HeroActions, HeroPill } from '@/ui/hero'
 import { Button } from '@/ui/button'
 
 const NAV_ITEMS = [
@@ -16,11 +16,14 @@ export function HeroSimple() {
         <HeroGrid />
         <HeroCloud />
         <HeroContent>
+          <HeroPill>
+            Available for new projects
+          </HeroPill>
           <HeroHeader>
-            Take on your most complex product challenges
+            Conquer your most complex product challenges
           </HeroHeader>
           <HeroSubHeader>
-            I&apos;m a Full Stack Engineer with a flexible contract model to suit any project size
+            I&apos;m a Full Stack Web and Mobile Engineer with a flexible contract model to suit any project size
           </HeroSubHeader>
           <HeroActions>
             <Button asChild>
