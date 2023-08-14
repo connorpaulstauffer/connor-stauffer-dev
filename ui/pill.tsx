@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { Slot } from '@radix-ui/react-slot'
 import { VariantProps, cva } from 'class-variance-authority'
 
 import { cn } from '@/utils'
@@ -24,10 +25,13 @@ const pillVariants = cva(
 export interface PillProps extends VariantProps<typeof pillVariants> {
   children: ReactNode
   className?: string
+  asChild?: boolean
 }
 
-export function Pill({ children, variant, size, className }: PillProps) {
-  return <div className={cn(pillVariants({ variant, size, className }))}>
+export function Pill({ children, variant, size, className, asChild = false }: PillProps) {
+  const Comp = asChild ? Slot : 'div'
+
+  return <Comp className={cn(pillVariants({ variant, size, className }))}>
     {children}
-  </div>
+  </Comp>
 }
