@@ -1,4 +1,4 @@
-import { Hero, Nav, HeroWrapper, HeroGrid, HeroCloud, HeroContent, HeroHeader, HeroSubHeader, HeroActions, HeroPill } from '@/ui/hero'
+import { Hero, Nav, HeroWrapper, HeroGrid, HeroCloud, HeroContent, HeroHeader, HeroSubHeader, HeroActions, HeroPill, HeroLearnMore } from '@/ui/hero'
 import { Button } from '@/ui/button'
 
 const NAV_ITEMS = [
@@ -31,6 +31,7 @@ export function HeroSimple() {
                 Work with me
               </a>
             </Button>
+            <HeroLearnMore href="#" />
           </HeroActions>
         </HeroContent>
       </HeroWrapper>
