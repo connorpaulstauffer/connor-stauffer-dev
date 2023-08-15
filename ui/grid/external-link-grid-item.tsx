@@ -5,7 +5,7 @@ interface LinkGridItemProps extends GridItemProps {
 }
 
 export function ExternalLinkGridItem({ href, children, ...props }: LinkGridItemProps) {
-  return <GridItem {...props} asChild>
+  return <GridItem {...props} hoverable asChild>
     <a href={href} target="_blank" rel="noopener noreferrer">
       {children}
     </a>
