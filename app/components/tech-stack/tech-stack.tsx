@@ -1,5 +1,5 @@
 import { Grid, ExternalLinkGridItem } from "@/ui/grid"
-import { NextJSLogo, VercelLogo, ReactLogo } from "./logos"
+import { NextJSLogo, VercelLogo, ReactLogo, MySQLLogo } from "./logos"
 
 import { cn } from "@/utils"
 
@@ -18,6 +18,9 @@ export function TechStack() {
           </ExternalLinkGridItem>
           <ExternalLinkGridItem href="https://react.dev/" className={cn(ITEM_CLASS_NAME, "p-4 sm:p-6")}>
             <ReactLogo />
+          </ExternalLinkGridItem>
+          <ExternalLinkGridItem href="https://www.mysql.com/" className={cn(ITEM_CLASS_NAME, "p-3 sm:p-5")}>
+            <MySQLLogo />
           </ExternalLinkGridItem>
         </Grid>
       </div>
