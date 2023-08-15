@@ -1,18 +1,15 @@
 import { ReactNode } from "react"
+import { Slot } from "@radix-ui/react-slot"
 
-interface GridItemProps {
+export interface GridItemProps {
   children: ReactNode
+  asChild?: boolean
 }
 
-export function GridItem({ children }: GridItemProps) {
-  return <div className="bg-white/5 p-8 sm:p-10">
+export function GridItem({ children, asChild = false }: GridItemProps) {
+  const Comp = asChild ? Slot : 'div'
+
+  return <Comp className="bg-white/5 p-8 sm:p-10 hover:bg-white/10">
     {children}
-    {/* <img
-      className="max-h-12 w-full object-contain"
-      src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-      alt="Transistor"
-      width={158}
-      height={48}
-    /> */}
-  </div>
+  </Comp>
 }
