@@ -1,4 +1,5 @@
 import { HeroSimple } from './components/hero-simple'
+import { TechStack } from './components/tech-stack'
 // import { Features } from './components/features'
 import { FeaturesSimple } from './components/features-simple'
 import { Pricing } from './components/pricing'
@@ -9,6 +10,7 @@ export default function Example() {
   return (
     <>
       <HeroSimple />
+      <TechStack />
       {/* <Features /> */}
       <FeaturesSimple />
       <Pricing />
