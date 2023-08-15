@@ -5,7 +5,7 @@ import { VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/utils'
 
 const itemVariants = cva(
-  'bg-white/5 p-8 sm:p-10',
+  'bg-white/5 flex justify-center items-center p-6 sm:p-8',
   {
     variants: {
       hoverable: {
@@ -20,13 +20,14 @@ const itemVariants = cva(
 
 export interface GridItemProps extends VariantProps<typeof itemVariants> {
   children: ReactNode
+  className?: string
   asChild?: boolean
 }
 
-export function GridItem({ children, hoverable, asChild = false }: GridItemProps) {
+export function GridItem({ children, hoverable, className, asChild = false }: GridItemProps) {
   const Comp = asChild ? Slot : 'div'
 
-  return <Comp className={cn(itemVariants({ hoverable }))}>
+  return <Comp className={cn(itemVariants({ hoverable }), className)}>
     {children}
   </Comp>
 }

@@ -1,17 +1,23 @@
 import { Grid, ExternalLinkGridItem } from "@/ui/grid"
-import { NextJSLogo } from "./logos/next-js"
+import { NextJSLogo, VercelLogo, ReactLogo } from "./logos"
 
-function TechStackLink({ href }: { href: string }) {
+import { cn } from "@/utils"
 
-}
+const ITEM_CLASS_NAME = "h-24"
 
 export function TechStack() {
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Grid>
-          <ExternalLinkGridItem href="https://nextjs.org/">
+          <ExternalLinkGridItem href="https://nextjs.org/" className={ITEM_CLASS_NAME}>
             <NextJSLogo />
+          </ExternalLinkGridItem>
+          <ExternalLinkGridItem href="https://vercel.com/" className={ITEM_CLASS_NAME}>
+            <VercelLogo />
+          </ExternalLinkGridItem>
+          <ExternalLinkGridItem href="https://react.dev/" className={cn(ITEM_CLASS_NAME, "p-4 sm:p-6")}>
+            <ReactLogo />
           </ExternalLinkGridItem>
         </Grid>
       </div>
