@@ -5,7 +5,7 @@ import { VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/utils'
 
 const itemVariants = cva(
-  'bg-white/5 flex justify-center items-center p-6 sm:p-8',
+  'bg-white/5 flex justify-center items-center p-8',
   {
     variants: {
       hoverable: {
