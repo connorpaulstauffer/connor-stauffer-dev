@@ -9,10 +9,10 @@ export function TechStack() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Grid>
           <ExternalLinkGridItem href="https://nextjs.org/" className={ITEM_CLASS_NAME}>
-            <NextJSLogo className="w-2/3" />
+            <NextJSLogo className="w-7/12" />
           </ExternalLinkGridItem>
           <ExternalLinkGridItem href="https://vercel.com/" className={ITEM_CLASS_NAME}>
-            <VercelLogo className="w-2/3" />
+            <VercelLogo className="w-7/12" />
           </ExternalLinkGridItem>
           <ExternalLinkGridItem href="https://react.dev/" className={ITEM_CLASS_NAME}>
             <ReactLogo className="h-2/3" />
